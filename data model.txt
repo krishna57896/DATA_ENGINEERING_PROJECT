@@ -1,0 +1,22 @@
+Table movies_consolidated {
+  movie_id int [pk]
+  title varchar
+  released date
+  popularity float
+  budget int
+  revenue int
+  vote_average float
+  vote_count int
+}
+
+Table genres {
+  genre_id int
+  movie_id int [ref: > movies_consolidated.movie_id]
+  genre varchar
+}
+
+Table production_companies {
+  company_id int
+  movie_id int [ref: > movies_consolidated.movie_id]
+  company_name varchar
+}

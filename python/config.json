@@ -1,0 +1,7 @@
+{
+    "postgres_user": "postgres",
+    "postgres_password": "WildFlea123!",
+    "postgres_host": "localhost",
+    "postgres_db": "movies",
+    "data_url": "https://s3-us-west-2.amazonaws.com/com.guild.us-west-2.public-data/project-data/the-movies-dataset.zip"
+}
